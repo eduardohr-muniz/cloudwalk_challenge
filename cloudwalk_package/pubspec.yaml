@@ -1,13 +1,17 @@
 name: cloudwalk_package
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+publish_to: "none"
+# homepage:
 
 environment:
-  sdk: '>=3.3.1 <4.0.0'
+  sdk: ">=3.3.1 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
+  dio: ^5.4.3+1
+  logger: ^1.4.0
+  toastification: ^1.2.1
   flutter:
     sdk: flutter
 
