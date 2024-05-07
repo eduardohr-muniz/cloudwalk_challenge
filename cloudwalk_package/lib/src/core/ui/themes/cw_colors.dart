@@ -35,7 +35,7 @@ class CwColors extends ThemeExtension<CwColors> {
   });
 
 //*COLORS
-  static const Color primaryColor_ = Color(0xff49A568);
+  static const Color primaryColor_ = Color(0xff1976d2);
   static const Color tertiaryLColor_ = Color(0xffffd800);
   static const Color tertiaryDColor_ = Color(0xffffd800);
   static const Color blackColor_ = Color(0xff030401);
