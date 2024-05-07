@@ -7,6 +7,7 @@ class IpapiRepository implements IIpapiRepository {
 
   @override
   Future<IpApiModel> getCurrentLocale() async {
-    return IpApiModel.fromMap(await datasource.getCurrentLocale());
+    final result = await datasource.getCurrentLocale();
+    return IpApiModel.fromMap(result);
   }
 }
