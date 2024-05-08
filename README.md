@@ -1,7 +1,7 @@
 # Cloudwalk Challeng
 
 
-<img src="![rotato](https://github.com/eduardohr-muniz/cloudwalk_challenge/assets/90477293/edd7291d-d870-4d94-a839-64f1ebdbee84)" alt="rotato.png">
+<img src="https://github.com/eduardohr-muniz/cloudwalk_challenge/assets/90477293/edd7291d-d870-4d94-a839-64f1ebdbee84" alt="rotato.png">
 
 
 ### Oque foi feito no projeto
@@ -21,13 +21,14 @@ Android:
 ```
 git clone https://github.com/eduardohr-muniz/cloudwalk_challenge
 ```
-ENTRE NO PROJETO
+## ENTRE NO PROJETO
+* Vscode
 ```
-cd cloudwalk_package; flutter pub get; cd ..
+cd cloudwalk_challenge; code .
 ```
 
 ```
-cd location_project; flutter pub get
+cd cloudwalk_package; flutter pub get; cd ..; cd location_project; flutter pub get
 ```
 
 ## 📫 Considerações finais
