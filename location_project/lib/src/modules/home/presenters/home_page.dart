@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
                   if (error is IpapiLimitError) {
                     return ErrorLimitRequestApiPage(error: error, store: store);
                   }
-                  return ErrorDefaultPage(onTryAgain: () => store.tryAgain());
+                  return ErrorNetworkPage(onTryAgain: () => store.tryAgain());
                 },
                 onComplete: (context, markers) => FlutterMap(
                   mapController: store.mapController,

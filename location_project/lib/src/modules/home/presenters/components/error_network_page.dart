@@ -1,9 +1,9 @@
 import 'package:cloudwalk_package/cloudwalk_package.dart';
 import 'package:flutter/material.dart';
 
-class ErrorDefaultPage extends StatelessWidget {
+class ErrorNetworkPage extends StatelessWidget {
   final void Function() onTryAgain;
-  const ErrorDefaultPage({
+  const ErrorNetworkPage({
     super.key,
     required this.onTryAgain,
   });
