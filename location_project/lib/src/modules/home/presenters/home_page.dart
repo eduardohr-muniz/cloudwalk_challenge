@@ -3,7 +3,7 @@ import 'package:dio_cache_interceptor_hive_store/dio_cache_interceptor_hive_stor
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:location_project/src/core/components/error_default_page.dart';
+import 'package:location_project/src/modules/home/presenters/components/error_network_page.dart';
 import 'package:location_project/src/modules/home/aplication/stores/home_store.dart';
 import 'package:location_project/src/modules/home/presenters/components/error_limit_request_api_page.dart';
 import 'package:flutter_map_cache/flutter_map_cache.dart';

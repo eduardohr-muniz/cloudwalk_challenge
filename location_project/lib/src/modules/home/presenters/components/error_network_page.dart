@@ -18,9 +18,17 @@ class ErrorDefaultPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Ops, ocorreu um erro temporário.", style: context.textTheme.headlineMedium),
+              Text(
+                "Ops, ocorreu um erro temporário.",
+                style: context.textTheme.headlineMedium,
+                textAlign: TextAlign.center,
+              ),
               Sz.i.sizedBoxH,
-              Text("Tente novamente mais tarde.", style: context.textTheme.bodyMedium?.muted(context)),
+              Text(
+                "Tente ativar sua localização, e clicar no botão abaixo",
+                style: context.textTheme.bodyMedium?.muted(context),
+                textAlign: TextAlign.center,
+              ),
               Sz.ii.sizedBoxH,
               FilledButton(onPressed: onTryAgain, child: const Text('Tentar Novamente')),
             ],

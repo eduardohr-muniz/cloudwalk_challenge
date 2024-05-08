@@ -26,7 +26,7 @@ class ErrorLimitRequestApiPage extends StatelessWidget {
               Sz.i.sizedBoxH,
               Text("Possivel problema:", style: context.textTheme.labelLarge),
               Sz.i.sizedBoxH,
-              Text("Estouramos o limite de requisições da api por minuto.", style: context.textTheme.bodyMedium?.muted(context)),
+              Text("Excedemos o limite de requisições da api por minuto.", style: context.textTheme.bodyMedium?.muted(context)),
               Sz.ii.sizedBoxH,
               FilledButton(
                   onPressed: () {

@@ -17,16 +17,20 @@ class HomeStore extends ChangeNotifier {
 
   String urlMap =
       "https://www.google.com/maps/vt/pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m3!1e0!2sm!3i628362738!3m7!2spt-BR!5e1105!12m4!1e68!2m2!1sset!2sRoadmap!4e0!5m1!1e0!23i4111425";
+
   bool get serviceLocationEnable => geolocatorService.serviceEnabled;
   final mapController = MapController();
+
   Future<List<Marker>> init() async {
     final hasPermission = await geolocatorService.handleLocationPermission();
-
+    List<Marker> markers = [];
     if (!hasPermission) {
-      return await loadCurrentLocationByIpapi();
+      markers = await loadCurrentLocationByIpapi();
     }
 
-    return await loadCurrentLocation();
+    markers = await loadCurrentLocation();
+    Future.delayed(700.milliseconds, () => mapController.move(markers[0].point, 17));
+    return markers;
   }
 
   Future<String> getPath() async {
